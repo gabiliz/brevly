@@ -28,8 +28,7 @@ export const LinkRow = ({
       await navigator.clipboard.writeText(shortUrlLink)
       toast.info('Link copiado para a área de transferência!')
     } catch (error) {
-      console.error('Erro ao copiar o link:', error)
-      alert('Falha ao copiar o link.')
+      toast.error('Erro ao copiar o link')
     }
   }
 

@@ -6,6 +6,8 @@ import { Button } from '@/components/common/button'
 import { LinkRow } from '@/components/link-row'
 import { useState } from 'react'
 import { CreateLinkCard } from '@/components/create-link-card'
+import { toast } from 'react-toastify'
+import { getApiErrorMessage } from '@/services/api-error-handler'
 
 export function Home() {
   const [isLoadingCSVDownload, setIsLoadingCSVDownload] = useState(false)
@@ -29,7 +31,7 @@ export function Home() {
       anchor.remove()
       setIsLoadingCSVDownload(false)
     } catch (error) {
-      console.error('Failed to export link data:', error)
+      toast.error(getApiErrorMessage(error))
     }
   }
 
