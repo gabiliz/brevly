@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Open Sans', sans-serif;
+
+  --color-blue-base: #2c46b1;
+  --color-blue-dark: #2c4091;
+
+  --color-gray-100: #f9f9fb;
+  --color-gray-200: #e4e6ec;
+  --color-gray-300: #cdcfd5;
+  --color-gray-400: #74798b;
+  --color-gray-500: #4d505c;
+  --color-gray-600: #1f2025;
+
+  --color-danger: #b12c4d;
+
+  --text-xl: 24px;
+  --text-xl--line-height: 32px;
+  --text-xl--font-weight: 700;
+  --text-lg: 18px; 
+  --text-lg--line-height: 24px;
+  --text-lg--font-weight: 700;
+  --text-md: 14px;
+  --text-md--line-height: 18px;
+  --text-md--font-weight: 600;
+  --text-sm: 12px;
+  --text-sm--line-height: 16px;
+  --text-xs: 10px;
+  --text-xs--line-height: 16px;
+  --text-xs--font-weight: 400;
+}
